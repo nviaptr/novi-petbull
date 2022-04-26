@@ -1,0 +1,37 @@
+toko hewan : PETBULL
+1. pembeli 
+2. produk
+bagian-bagian yang ada di PETBULL :
+HOME
+DOG
+CAT
+SMALL PET
+HEALTHCARE
+TOYS
+GROOMING
+ACCESORIES
+SALE
+ada bagian :
+1. login
+2. register
+ada dua table :
+1. user
+2. produk
+BACKEND
+node js versi LTS
+nodemon -g
+express
+body parse 
+cors
+mysql
+FRONTEND
+react js
+react native
+npm i -g nodemon
+nodemon -v
+cara buat backend
+1. buat folder
+2. buka folder di vscode klik kanan
+3. npm init -y
+4. package json
+5. npm i express body-parser mysql cors
