@@ -1,0 +1,101 @@
+petshop --> user --> produk
+backend = nodemon, express, nodejs, mysql, cors, body-parser
+frontend = reactjs, react native
+
+npm i -g nodemon
+
+DATABASE
+
+=====
+
+1. nyalakan xampp
+2. masuk ke dalam phpmyadmin
+3. buat database: petbull_db
+4. atur privillages untuk membuat user
+5. buat user account baru
+6. buat nama user dan password
+7. masuk ke database lalu membuat table sesuai keperluan
+
+TABEL DATABASE 
+=====
+1. USER/PEMBELI
+id INT NOT NULL AUTO_INCREMENT Primary Key
+username VARCHAR(255) NOT NULL
+email VARCHAR(255) NOT NULL
+password VARCHAR(255) NOT NULL
+name VARCHAR(255) 
+alamat VARCHAR(255)
+2. PRODUK
+cat : 
+- cat_name : VARCHAR
+- cat_color : VARCHAR
+- cat_age : INT
+dog : 
+- dog_name : VARCHAR
+- dog_color : VARCHAR
+- dog_age : INT
+
+KODE MYSQL 
+
+* CREATE TABLE CAT {
+     cat_name VARCHAR (100),
+     cat_color VARCHAR (100),
+     cat_age INT (11));
+}
+
+* CREATE TABLE USER {
+        id INT (11) NULL AUTO_INCREMENT PRIMARY KEY,
+        username VARCHAR(100),
+        email VARCHAR(100),
+        password VARCHAR (100),
+        name VARCHAR(100),
+        alamat VARCHAR(100));
+}
+
+* CREATE TABLE DOG {
+        dog_name VARCHAR(100),
+        dog_color VARCHAR(100),
+        dog_age INT(11));
+}
+
+CARA BUAT BACKEND
+1. Masuk ke folder tokobuku-backend dan buka terminal git bash di folder tersebut
+2. Membuat package.json dengan npm init -y di terminal
+3. Menginstal library untuk backend
+	npm i express mysql body-parser cors dotenv
+4. Generate gitignore file lewat gitignore generator (vs code extension), tambahkan node
+5. Buat file app.js
+6. Inisialisasi Express, Cors, bodyParser, Port dan koneksi Port serta Routing dalam app.js
+7. Jalankan app.js dengan npm start
+8. Cek di browser pada localhost:port		
+
+install back-end :
+- nodemon
+- express
+- cors
+- body-parser
+- mysql
+
+cara buat backend :
+- buat folder
+- buka vscode
+- install npm init -y
+- install packge.json muncul
+- install npm i express body-parser mysql cors
+
+user case
+pendaftaran/profile
+login
+register
+beli makanan ,pembayaran, keranjang, 3rd api
+searching
+filter makanan
+
+user story
+register
+username:pia ---> halaman profi ---> no telp
+pass: ---> upercase,uniqcase,lowercase
+email: ---> google, facebook, twitter
+
+login:---> username/email, pass
+belibuku ---> pilih makanan, buka keranjang,
