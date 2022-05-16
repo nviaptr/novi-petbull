@@ -26,6 +26,11 @@ password VARCHAR(255) NOT NULL
 name VARCHAR(255) 
 alamat VARCHAR(255)
 2. PRODUK
+id INT
+kode INT
+nama VARCHAR
+keterangan VARCHAR 
+
 cat : 
 - cat_name : VARCHAR
 - cat_color : VARCHAR
