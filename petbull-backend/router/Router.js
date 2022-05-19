@@ -5,9 +5,11 @@ const express = require('express');
 const { Controller } = require('../controller/Controller');
 const router = express.Router();
 const { petRouter } = require('./petRouter');
+// const { userRouter } = require('./userRouter');
 
-router.use('/', Controller.Homepage);
-router.get('/pet', petRouter);
+router.get('/', Controller.Homepage);
+router.use('/pet', petRouter);
+// router.use('/user', userRouter);
 
 
 

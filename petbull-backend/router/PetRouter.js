@@ -11,11 +11,12 @@
 const express = require('express');
 const petRouter = express.Router();
 
-// endpoint : all pet
-petRouter.get('/', function (req, res){
-    res.send('halo ini router petshop');
-});
 
+// inisiasi pet controller
+const {petController} = require('../controller/petController');
+
+// endpoint : all pet
+petRouter.get('/', petController.Tes);
 module.exports = { petRouter };
 
 

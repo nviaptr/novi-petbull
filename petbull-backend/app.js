@@ -4,7 +4,7 @@ require('dotenv').config();
 // install libraries
 const express = require('express');
 const app = express();
-const router = require('./router/Router')
+const {router} = require('./router/Router')
 
 // install PORT
 const port = process.env.PORT || 7000
